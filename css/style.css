@@ -40,6 +40,7 @@ header{
     background-color: #0084fd;
 }
 .container{
+    width: 100vw;
     justify-content: space-between;
 }
 .bars a i{
@@ -55,6 +56,12 @@ main a{
     text-decoration: none;
     color: white;
 }
+.avatar{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+}
 
 /* app */
 .blue{
@@ -69,13 +76,14 @@ main a{
 .demo-application i{
     color:#0084fd;
 }
-.dowload *{
+.download{
+    padding-bottom: 0;
     text-align: left;
 }
-.dowload .button a{
+.download .button a{
     background-color: #0084fd;
 }
-.dowload .button i{
+.download .button i{
     font-size: 1rem;
     margin-right: 5px;
     color: white;
@@ -85,7 +93,7 @@ main a{
     margin-bottom: 2rem;
 }
 
-/* planning strategic */
+/* strategic planning*/
 .planning{
     background-color: #9792e4;
 }
@@ -106,8 +114,18 @@ main a{
     margin: 2rem 0;
     font-size: 2rem;
 }
-.white i{
-    margin-top: 2rem;
+.white p{
+    margin-bottom: 2rem;
+}
+.arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #9792e4;
+    margin: 0 auto;
+}
+.arrow i{
+    line-height: 50px;
 }
 
 /* testimonial */
@@ -176,6 +194,15 @@ main a{
     margin: 2rem 0;
     font-size: 2em;
 }
+.user{
+    position: relative;
+}
+.about-us .user > i{
+    position: absolute;
+    font-size: 5rem;
+    top: 0;
+    left: 60%;
+}
 .about-us .button a{
     background-color: #9792e4;
     font-size: 12px;
@@ -202,9 +229,6 @@ main a{
     margin: 2rem 0;
     color: #fdc15f;
 }
-.get-started p{
-    /* margin-bottom: 3rem; */
-}
 .get-started .button{
     margin: 2rem 0;
 }
@@ -222,7 +246,6 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    height: 500px;
 }
 footer section{
     padding: 0;
@@ -233,11 +256,67 @@ footer .container{
 }
 footer span{
     display: inline-block;
-    padding-top: 3rem;
+    padding: 3rem 0;
 }
 
 
 
+/* RESPONSIVE */
 
+/* mobile > tablet */
+@media  screen and (min-width:480px) {
+    .container{
+        width: 100vw;
+    }
+    .demo-application .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .demo-application .container > .download{
+        width: 65%;
+    }
+    .demo-application .container > div:not(.download){
+        width: 30%;
+    }
+    .testimonials .container > div *{
+        text-align: left;
+    }
+    .testimonials .card{
+        display: flex;
+    }
+    .info-user{
+        padding-left: 1rem;
+    }
+    .benefits .container > .column{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .column > .card{
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+    .about-us .container{
+        display: flex;
+    }
+    .about-us .about-par{
+        width: 60%;
+    }
+    .about-us .user{
+        width: 30%;
+    }
+    .user > i{
+        left: 50px;
+    }
+}
 
-/* DEBUG */
+/* tablet > desktop
+@media screen and (min-width:1100px) {
+    .container{
+        width: 80vw;
+    }
+    .download{
+        display: flex;
+    }
+} */
