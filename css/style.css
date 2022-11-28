@@ -6,6 +6,9 @@
 }
 
 /* GENERAL */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 .container{
     padding: 2rem;
     margin: 0 auto;
@@ -19,62 +22,72 @@ section{
 li{
     list-style: none;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
 .card{
     padding: 2rem;
     margin: 2rem 0;
     border-radius: 2rem;
 }
 p{
-    line-height: 25px;
+    line-height: 30px;
+}
+.button a{
+    padding: 0.5em 3em;
+    border-radius: 5rem;
 }
 
 /* HEADER */
 header{
-    background-color: blue;
+    background-color: #0084fd;
 }
 .container{
     justify-content: space-between;
 }
-.bars a{
+.bars a i{
     font-size: 1.5rem;
+    color: white;
 }
 
 /* MAIN */
 main img{
     width: 100%;
 }
+main a{
+    text-decoration: none;
+    color: white;
+}
 
 /* app */
 .blue{
-    background-color: aqua;
+    background-color: #b5ddff;
     text-align: center;
 }
 .demo-application p{
     margin: 2rem 0;
 }
-.button{
-    margin-bottom: 2rem;
-}
-.button a{
-    background-color: blue;
-    padding: 0.5em 3em;
-    border-radius: 5rem;
-}
+.demo-application h2,
+.demo-application h3,
 .demo-application i{
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    color:#0084fd;
 }
 .dowload *{
     text-align: left;
 }
+.dowload .button a{
+    background-color: #0084fd;
+}
+.dowload .button i{
+    font-size: 1rem;
+    margin-right: 5px;
+    color: white;
+}
+.blue i{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
 
 /* planning strategic */
 .planning{
-    background-color: blueviolet;
+    background-color: #9792e4;
 }
 .planning > div:first-child{
     padding: 2rem;
@@ -86,11 +99,12 @@ main img{
 }
 .white{
     background-color: white;
-    color: black;
+    color: black; 
     text-align: center;
 }
 .white h3{
     margin: 2rem 0;
+    font-size: 2rem;
 }
 .white i{
     margin-top: 2rem;
@@ -100,32 +114,37 @@ main img{
 .testimonials *{
     text-align: center;
 }
-.testimonials > h3{
-    font-size: 3em;
+.testimonials h2{
+    font-size: 2em;
     margin: 0.5em 0;
+    color: #9792e4;
 }
 .testimonials p{
     margin-top: 0.5em;
     margin-bottom: 1.5rem;
 }
+.testimonials span{
+    font-size: 1.5em;
+}
 .violet{
-    background-color: blueviolet;
+    background-color: #9792e4;
     color: white;
 }
 
 /* benefits */
 .benefits{
-    background-color: blueviolet;
+    background-color: #9792e4;
     color: white;
     text-align: center;
 }
-.benefits > h2{
+.benefits h2{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-.white{
+.benefits .white{
     text-align: left;
-    color: blueviolet;
+    color: #9792e4;
+    background-color: white;
 }
 .benefits .white h3{
     font-size: 2em;
@@ -136,14 +155,15 @@ main img{
 }
 .benefits .white p{
     margin-bottom: 2rem;
+    color: black;
 }
 .benefits .button a{
-    background-color: blueviolet;
+    background-color: #9792e4;
 }
 
 /* about us */
 .about-us{
-    color: blueviolet;
+    color: #9792e4;
 }
 .about-us h2{
     font-size: 3em;
@@ -157,18 +177,20 @@ main img{
     font-size: 2em;
 }
 .about-us .button a{
-    background-color: blueviolet;
+    background-color: #9792e4;
     font-size: 12px;
+    padding: 0.5rem 1rem;
 }
 
 /* get started */
 .get-started{
-    background-color: blueviolet;
+    background-color: #9792e4;
     color: white;
     text-align: center;
 }
 .get-started h2{
     font-size: 1em;
+    color: #c5c2f0;
 }
 .get-started h3{
     font-size: 2em;
@@ -178,29 +200,40 @@ main img{
     display: inline-block;
     font-size: 4em;
     margin: 2rem 0;
-    color: yellow;
+    color: #fdc15f;
 }
 .get-started p{
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
+}
+.get-started .button{
+    margin: 2rem 0;
 }
 .get-started .button a{
     background-color: white;
     color: blueviolet;
-    font-size: 1.5em;
+    font-size: 1.0em;
     padding: 1rem 6rem;
 }
-
+.copyright a{
+    text-decoration: underline;
+}
 /* FOOTER */
 footer{
     background-color: black;
     color: white;
     text-align: center;
+    height: 500px;
 }
 footer section{
     padding: 0;
 }
 footer .container{
     padding-bottom: 0;
+    padding-top: 0;
+}
+footer span{
+    display: inline-block;
+    padding-top: 3rem;
 }
 
 
