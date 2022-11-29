@@ -1,0 +1,105 @@
+/* mobile > tablet */
+@media  screen and (min-width:576px) {
+    #demo-application .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* demo-application */
+    #demo-application .container > .download{
+        width: 65%;
+    }
+    .download .phone{
+        justify-content: flex-start;
+    }
+    #demo-application .container > div:not(.download){
+        width: 30%;
+    }
+
+    /* testimonials */
+    #testimonials .container > div *{
+        text-align: left;
+    }
+    #testimonials .card{
+        display: flex;
+    }
+    .info-user{
+        padding-left: 3rem;
+        margin: auto 0;
+    }
+
+    /* benefits */
+    #benefits .container > .column{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .column{
+        margin: 0 -1rem;
+    }
+    .column > .card{
+        width: calc(50% - 2rem);
+        margin: 1rem;
+    }
+
+    /* about us */
+    #about-us .container{
+        display: flex;
+    }
+    #about-us .about-par{
+        width: 60%;
+        padding-right: 50px;
+    }
+    #about-us .user{
+        width: 40%;
+    }
+
+    /* get started */
+    #get-started .container,
+    footer .container{
+        width: 50vw;
+    }
+}
+
+/* tablet > desktop */
+@media screen and (min-width:1100px) {
+    .container{
+        width: 70vw;
+    }
+
+    /* header */
+    nav{
+        display: block;
+    }
+    .menu-bars{
+        display: none;
+    }
+
+    /* demo application */
+    .download{
+        display: flex;
+    }
+    .download > div{
+        width: 50%;
+    }
+
+    /* planning */
+    #planning .container{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 60vw;
+    }
+    #planning .white{
+        margin: 0;
+    }
+    .strategic{
+        padding-right: 50px;
+    }
+
+    /* benefits */
+    #benefits .card{
+        width: calc(100% / 3 - 2rem);
+    }
+}

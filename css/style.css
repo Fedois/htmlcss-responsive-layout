@@ -50,7 +50,7 @@ ul > li{
 ul > li a{
     text-decoration: none;
     color: white;
-    margin: 0 10px;
+    margin-left: 15px;
 }
 ul > li a:not(.button a):hover{
    text-decoration: underline;
@@ -60,10 +60,10 @@ nav .button a{
     color: black;
     padding: 5px;
 }
-.bars{
+.menu-bars{
     margin: auto 0;
 }
-.bars a i{
+.menu-bars a i{
     font-size: 1.5rem;
     color: white;
 }
@@ -71,9 +71,6 @@ nav .button a{
 /* MAIN */
 main{
     padding-top: 50px;
-}
-main img{
-    width: 100%;
 }
 main a{
     text-decoration: none;
@@ -94,7 +91,8 @@ section{
     border-radius: 2rem;
 }
 #planning,
-#testimonials, 
+#testimonials,
+#benefits, 
 #about-us, 
 #get-started{
     scroll-margin: 50px;
@@ -142,6 +140,9 @@ section{
 /* strategic planning*/
 #planning{
     background-color: #9792e4;
+}
+#planning img{
+    width: 100%;
 }
 .strategic{
     color: white;
@@ -303,96 +304,4 @@ footer .container{
 footer span{
     display: inline-block;
     padding: 3rem 0;
-}
-
-
-
-/* RESPONSIVE */
-
-/* mobile > tablet */
-@media  screen and (min-width:576px) {
-    #demo-application .container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    #demo-application .container > .download{
-        width: 65%;
-    }
-    .download .phone{
-        justify-content: flex-start;
-    }
-    #demo-application .container > div:not(.download){
-        width: 30%;
-    }
-    #testimonials .container > div *{
-        text-align: left;
-    }
-    #testimonials .card{
-        display: flex;
-    }
-    .info-user{
-        padding-left: 3rem;
-        margin: auto 0;
-    }
-    #benefits .container > .column{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .column{
-        margin: 0 -1rem;
-    }
-    .column > .card{
-        width: calc(50% - 2rem);
-        margin: 1rem;
-    }
-    #about-us .container{
-        display: flex;
-    }
-    #about-us .about-par{
-        width: 60%;
-        padding-right: 50px;
-    }
-    #about-us .user{
-        width: 40%;
-    }
-    #get-started .container,
-    footer .container{
-        width: 50vw;
-    }
-}
-
-/* tablet > desktop */
-@media screen and (min-width:1100px) {
-    .container{
-        width: 70vw;
-    }
-    nav{
-        display: block;
-    }
-    .bars{
-        display: none;
-    }
-    .download{
-        display: flex;
-    }
-    .download > div{
-        width: 50%;
-    }
-    #planning .container{
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        width: 60vw;
-    }
-    #planning .white{
-        margin: 0;
-    }
-    .strategic{
-        padding-right: 50px;
-    }
-    #benefits .card{
-        width: calc(100% / 3 - 2rem);
-    }
 }
