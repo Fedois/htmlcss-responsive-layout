@@ -19,6 +19,11 @@ body{
 .flex{
     display: flex;
 }
+:root{
+    --color-1: #0084fd; 
+    --color-2: #b5ddff;
+    --color-3: #9792e4;
+}
 p{
     line-height: 30px;
 }
@@ -29,7 +34,7 @@ p{
 
 /* HEADER */
 header{
-    background-color: #0084fd;
+    background-color: var(--color-1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,16 +48,16 @@ nav{
     display: none;
     margin: auto 0;
 }
-ul > li{
+nav ul > li{
     list-style: none;
     display: inline-block;
 }
-ul > li a{
+nav ul > li a{
     text-decoration: none;
     color: white;
     margin-left: 15px;
 }
-ul > li a:not(.button a):hover{
+nav ul > li a:not(.button a):hover{
    text-decoration: underline;
 }
 nav .button a{
@@ -62,6 +67,7 @@ nav .button a{
 }
 .menu-bars{
     margin: auto 0;
+    position: relative;
 }
 .menu-bars a i{
     font-size: 1.5rem;
@@ -103,9 +109,8 @@ section{
     margin: 2rem 0;
 }
 #demo-application h2,
-#demo-application h3,
-#demo-application i{
-    color:#0084fd;
+#demo-application h3{
+    color:var(--color-1);
 }
 .download{
     padding-bottom: 0;
@@ -119,7 +124,7 @@ section{
     width: 80%;
 }
 .download .button a{
-    background-color: #0084fd;
+    background-color: var(--color-1);
 }
 .download .button i{
     font-size: 1rem;
@@ -127,7 +132,7 @@ section{
     color: white;
 }
 #demo-application .blue{
-    background-color: #b5ddff;
+    background-color: var(--color-2);
 }
 #demo-application .blue:not(.download){
     text-align: center;
@@ -135,11 +140,12 @@ section{
 .blue i{
     font-size: 5rem;
     margin-bottom: 2rem;
+    color: var(--color-1);
 }
 
 /* strategic planning*/
 #planning{
-    background-color: #9792e4;
+    background-color: var(--color-3) ;
 }
 #planning img{
     width: 100%;
@@ -181,7 +187,7 @@ section{
 #testimonials h2{
     font-size: 2em;
     margin: 0.5em 0;
-    color: #9792e4;
+    color: var(--color-3);
 }
 #testimonials p{
     margin-top: 0.5em;
@@ -191,13 +197,13 @@ section{
     font-size: 1em;
 }
 #testimonials .violet{
-    background-color: #9792e4;
+    background-color: var(--color-3);
     color: white;
 }
 
 /* benefits */
 #benefits{
-    background-color: #9792e4;
+    background-color: var(--color-3);
     color: white;
     text-align: center;
 }
@@ -207,7 +213,7 @@ section{
 }
 #benefits .white{
     text-align: left;
-    color: #9792e4;
+    color: var(--color-3);
     background-color: white;
 }
 #benefits .white h3{
@@ -222,12 +228,12 @@ section{
     color: black;
 }
 #benefits .button a{
-    background-color: #9792e4;
+    background-color: var(--color-3);
 }
 
 /* about us */
 #about-us{
-    color: #9792e4;
+    color: var(--color-3) ;
 }
 #about-us h2{
     font-size: 3em;
@@ -251,14 +257,14 @@ section{
     right: 0;
 }
 #about-us .button a{
-    background-color: #9792e4;
+    background-color: var(--color-3);
     font-size: 12px;
     padding: 0.5rem 1rem;
 }
 
 /* get started */
 #get-started{
-    background-color: #9792e4;
+    background-color: var(--color-3);
     color: white;
     text-align: center;
 }
@@ -281,7 +287,7 @@ section{
 }
 #get-started .button a{
     background-color: white;
-    color: blueviolet;
+    color: var(--color-3);
     font-size: 1.0em;
     padding: 1rem 6rem;
 }
@@ -303,5 +309,5 @@ footer .container{
 }
 footer span{
     display: inline-block;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
