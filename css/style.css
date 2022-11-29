@@ -67,7 +67,6 @@ nav .button a{
 }
 .menu-bars{
     margin: auto 0;
-    position: relative;
 }
 .menu-bars a i{
     font-size: 1.5rem;
@@ -250,7 +249,7 @@ section{
     position: relative;
     display: inline-block;
 }
-#about-us .img-user > i{
+.img-user > i{
     position: absolute;
     font-size: 5rem;
     top: 0;
